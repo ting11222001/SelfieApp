@@ -18,6 +18,7 @@ function setup(){
     // P5JS: get video from computer's webcam
     noCanvas();
     const video = createCapture(VIDEO);
+    video.elt.setAttribute('playsinline', '');
     video.size(300, 250);
     video.parent('container') // move video webcam screen into specific div
     const button = document.getElementById('submit');

@@ -9,7 +9,11 @@ const app = express();
 
 // add port for my server to listen
 // add a call back function to check if my server is listening
-app.listen(3000, () => console.log('I am listening!'));
+// app.listen(process.env.PORT || 3000, () => console.log('I am listening!'));
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Starting server at ${port}`);
+});
 
 // allow express to render a static html page
 // create and use a directory called 'public'
