@@ -17,7 +17,15 @@ function setup(){
     let lat, lon;
     // P5JS: get video from computer's webcam
     noCanvas();
-    const video = createCapture(VIDEO);
+    // const video = createCapture(VIDEO);
+    video =  createCapture({
+        audio: false,
+        video: {
+          facingMode: {
+            exact: "environment"
+          }
+        }
+    });
     video.elt.setAttribute('playsinline', '');
     video.size(300, 250);
     video.parent('container') // move video webcam screen into specific div
