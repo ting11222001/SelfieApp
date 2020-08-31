@@ -1,5 +1,7 @@
 # Selfie-App
-this is a selfie app built with node.js and Express
+this is a selfie app built with node.js and Express.
+Demo:
+https://selfie-app-by-nodejs.herokuapp.com/
 
 ## What's inside
 This is a selfie app built with Node.js and Express. It is to showcase a "full stack" development adding server-side programming with node.js and Express.
