@@ -1,6 +1,9 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "This is a data selfie app created on Aug 27, 2020.",
   "main": "index.js",
   "scripts": {
